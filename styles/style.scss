@@ -1,0 +1,101 @@
+// Variables
+
+$main-color: lightseagreen;
+
+// Universal selectors
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    outline: none;
+    border: none;
+    font-family: 'Poppins', sans-serif;
+}
+html {
+    font-size: 62.5%;
+    background-color: #222222;
+}
+h2 {
+    font-size: 1.8rem;
+}
+// Header part
+
+header {
+    h1, h2 {
+        margin: 3rem;
+        text-align: center;
+    }
+}
+// Inputs section
+
+.main-container {
+    width: 100%;
+}
+.form-container-name, .form-container-date, .form-container-amount {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+
+    h2 {
+        margin-right: 1.5rem;
+    }
+    input {
+        margin: 1rem;
+        padding: 1rem 2rem;
+        margin-left: 1.5rem;
+        text-align: center;
+        background-color: $main-color;
+    }
+}
+.form-container-two {
+    display: flex;
+    justify-content: center;
+    margin: 3rem;
+}
+.form-container-date, .form-container-amount {
+    margin-left: 1.5rem;
+    margin-right: 1.5rem;
+}
+.add-expense-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    button {
+        padding: 1.5rem;
+        background-color: $main-color;
+        cursor: pointer;
+        transition: ease-in-out 0.3s;
+    }
+    button:hover {
+        background-color: #111111;
+    }
+}
+// Tables
+
+.tables-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.table-template {
+    border: 0.5px solid black;
+    width: 75%;
+    margin: 3rem;
+    font-size: 1.5rem;
+    text-align: center;
+    border-collapse: collapse;
+    tr, th, td {
+        padding: 1rem;
+        border: #666666 0.1px solid;
+    }
+}
+
+// Responsive design/Mobile design
+
+@media screen and (max-width: 450px) {
+    * {
+        font-size: 1.2rem;
+    }
+}

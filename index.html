@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/style.css">
+    <title>Expense tracker</title>
+</head>
+<body>
+    <header>
+        <h1>Expense Tracker</h1>
+        <h2>Add a new item: </h2>
+    </header>
+
+    <main>
+        <div class="main-container">
+
+            <div class="form-container-name">
+                <h2>Name: </h2>
+                <input id="nameInput" type="text">
+            </div>
+            <div class="form-container-two">
+                <div class="form-container-date">
+                    <h2>Date: </h2>
+                    <input id="dateInput" type="date">
+                </div>
+                <div class="form-container-amount">
+                    <h2>Amount: </h2>
+                    <input id="amountInput" type="text">
+                </div>
+            </div>
+            <div class="add-expense-container">
+                <button class="add-expense-button">Add expense</button>
+            </div>
+        </div>
+
+        <div class="tables-container">
+                <table class="table-template">
+                    <tr>
+                        <th>Name</th>
+                        <th>Date</th>
+                        <th>Amount</th>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </main>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <script src="code.js"></script>
+</body>
+</html>
