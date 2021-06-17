@@ -1,0 +1,9 @@
+Personal, seguridad, roles
+
+Dropdown
+
+
+
+Foto
+Nombre
+}Tek team sub team organization opcion para cambiar la imagen o cancelar y  dejar todo x default, new password, password confirmation

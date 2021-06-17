@@ -6,49 +6,48 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="styles/style.css">
-    <title>Expense tracker</title>
+    <link rel="stylesheet" href="styles/main.css">
+    <title>Profile</title>
 </head>
 <body>
     <header>
-        <h1>Expense Tracker</h1>
-        <h2>Add a new item: </h2>
+        <ul class="nav-bar">
+            <li class="profile-tab">Profile</li>
+            <li class="security-tab">Security</li>
+            <li class="roles-tab">Roles</li>
+        </ul>
     </header>
 
     <main>
-        <div class="main-container">
-
-            <div class="form-container-name">
-                <h2>Name: </h2>
-                <input id="nameInput" type="text">
-            </div>
-            <div class="form-container-two">
-                <div class="form-container-date">
-                    <h2>Date: </h2>
-                    <input id="dateInput" type="date">
-                </div>
-                <div class="form-container-amount">
-                    <h2>Amount: </h2>
-                    <input id="amountInput" type="text">
+        <div class="squares-container">
+            <div class="profile-container">
+                <ul>
+                    <li id="name">Name: </li>
+                    <li id="team">Team: </li>
+                    <li id="division">Division: </li>
+                </ul>
+                <div class="profile-picture">
+                    <img src="assets/pp.jpg">
+                    <button>Change</button>
                 </div>
             </div>
-            <div class="add-expense-container">
-                <button class="add-expense-button">Add expense</button>
-            </div>
-        </div>
-
-        <div class="tables-container">
-                <table class="table-template">
-                    <tr>
-                        <th>Name</th>
-                        <th>Date</th>
-                        <th>Amount</th>
-                    </tr>
-                </table>
+            <div class="security-container">
+                <form class="form-change-password">
+                    <h3>Type your current password: </h3>
+                    <input type="password">
+                    <h3>Type a new password: </h3>
+                    <input type="password">
+                    <h3>Confirm your new password: </h3>
+                    <input type="password">
+                    <button type="submit">Submit</button>
+                </form>
             </div>
         </div>
     </main>
-    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+
+    <footer class="footer-container">
+        <img src="assets/settings.svg">
+    </footer>
     <script src="code.js"></script>
 </body>
 </html>
